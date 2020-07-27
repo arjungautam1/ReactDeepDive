@@ -16,12 +16,21 @@ function MainContents()
     else {
         timeOfDay="Good Night "
     }
+
+    // React Inline styles
+    const styles={
+        color:"Green",
+        backgroundColor:"cyan",
+        fontSize:"50px"
+            
+    }
+
     return(
 
         <main className="main">
        
-       <h1>{timeOfDay} Budi .</h1>
-
+       <h1 style={styles}>{timeOfDay} Budi .</h1>
+        
         </main>
 
     )
