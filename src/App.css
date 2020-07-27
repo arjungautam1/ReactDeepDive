@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -36,3 +37,40 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+
+  height: 100px;
+  background-color:darkcyan;
+  color: whitesmoke;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  height:200px;
+  background-color: turquoise;
+  color: black;
+  margin-bottom: 20px;
+  text-align:center;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  height: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

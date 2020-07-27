@@ -4,7 +4,7 @@ function MainContents()
 {
     return(
 
-        <main>
+        <main className="main">
             This is the header .
         </main>
 

@@ -1,10 +1,11 @@
 import React from "react"
+import "../App.css"
 
 function Header()
 {
     return(
-        <header>
-            This is header.
+        <header className="navbar">
+            Welcome to React World .
         </header>
     )
 }
