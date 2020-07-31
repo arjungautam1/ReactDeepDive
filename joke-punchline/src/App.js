@@ -1,6 +1,30 @@
 import React from "react"
 import Joke from "./components/Joke"
+import JokeData from "./components/JokeData"
+import jokeData from "./components/JokeData"
+
 function App() {
+
+  jokeData.map(fjoke=>{
+    return (
+      <Joke question={joke.question} 
+      
+    )
+ 
+  })
+
+
+
+  /* Higher order methods  */
+//   const nums=[1,2,3,4,5]
+//   const doubled=nums.map(function(num)
+//   {
+//     return num*2
+//   })
+  
+// console.log(doubled)
+
+
   return (
     <div className="joke">
 
