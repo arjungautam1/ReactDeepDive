@@ -1,39 +1,32 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Icon from './components/Icon';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import {Card, CardBody, Container, Button, Col, Row} from 'reactstrap'
+import React, {Component} from "react"
 
+// Challenge:
+// Given an incomplete class-based component without a constructor, 
+// add a constructor and initialize state to fix the broken component.
 
-const itemArray = new Array(9).fill("empty")
+class App extends Component {
 
+  constructor() {
+    super()
 
-
-const App=()=> {
-  const [isCross, setIsCross] = useState(false);
-  const [winMessage, setWinMessage] = useState("");
-
-
-  const reloadGame=()=>{
+    this.state = {
+      name: "Arjun",
+      age: 20
+    }
 
   }
 
-  const checkIsWinner = ()=>{
+  render() {
+    return (
 
+      <div>
+        <h1>My name is{this.state.name}</h1>
+        <h3>{this.state.age} years old</h3>
+      </div>
+
+    )
   }
 
-  const changeItem = (itemNumber)=>{
-
-  }
-
-  return (
-    <div className="App">
-    <Icon name="cross"/>
-    </div>
-  );
 }
 
-export default App;
+export default App
