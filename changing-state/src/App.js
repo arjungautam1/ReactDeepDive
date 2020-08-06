@@ -11,7 +11,7 @@ class App extends Component {
     }
 
     //If i want to change the count just to one
-    /*
+    /*e react
        handleClick(){
            this.setState({count:1})
        }
