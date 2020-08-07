@@ -17,18 +17,17 @@ class App extends React.Component {
   increment() {
     this.setState(prevState => {
       return {
-        count: prevState.count + 1,
-        color: randomcolor()
+        count: prevState.count + 1
       }
     })
   }
 
-  // componentDidUpdate(prevProps, prevState) {
-  //     if(prevState.count !== this.state.count) {
-  //         const newColor = randomcolor()
-  //         this.setState({color: newColor})
-  //     }
-  // }
+  componentDidUpdate(prevProps, prevState) {
+    if(prevState.count !== this.state.count) {
+      const newColor = randomcolor()
+      this.setState({color: newColor})
+    }
+  }
 
   render() {
     return (
