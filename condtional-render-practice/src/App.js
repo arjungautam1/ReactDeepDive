@@ -36,7 +36,7 @@ export  default class App extends Component
 
             <div>
                 <button onClick={this.handleClick}> {buttonText}</button>
-                <h1>{displayText}</h1>
+                <h1>{displayTextv}</h1>
             </div>
         )
     }
