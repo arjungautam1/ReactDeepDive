@@ -9,9 +9,9 @@ function App()
     {
         setCounter(prevState => prevState+1)
     }
+    //Used instead of componentDidUpdate
     useEffect(()=>{
         setColor(randomcolor())
-
     },[counter])
     return(
         <div>
